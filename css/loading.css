@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+}
+
+span {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 5px;
+    position: relative;
+}
+
+span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: -1;
+    animation: ripple 1.5s ease-out infinite;
+    -webkit-animation: ripple 1.5s ease-out infinite;
+}
+
+span:first-child {
+    background-color: #D93814;
+}
+
+span:first-child::before {
+    animation-delay: 0.2s;
+}
+
+span:nth-child(2) {
+    background-color: #E67209;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+span:nth-child(2)::before {
+    animation-delay: 0.4s;
+}
+
+span:nth-child(3) {
+    background-color: #F2AE02;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+span:nth-child(3)::before {
+    animation-delay: 0.6s;
+}
+
+span:nth-child(4) {
+    background-color: #14B321;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+span:nth-child(4)::before {
+    animation-delay: 0.8s;
+}
+
+span:nth-child(5) {
+    background-color: #0242F2;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+span:nth-child(5)::before {
+    animation-delay: 1.0s;
+}
+
+span:nth-child(6) {
+    background-color: #7E418C;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+span:nth-child(6)::before {
+    animation-delay: 1.2s;
+}
+
+@keyframes ripple {
+    from {
+      opacity: 1;
+      transform: scale(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(3);
+      -webkit-transform: scale(3);
+      -moz-transform: scale(3);
+      -ms-transform: scale(3);
+      -o-transform: scale(3);
+}
+  }
